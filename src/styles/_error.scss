@@ -1,0 +1,27 @@
+.error-page {
+    text-align: center;
+    color: $main-color;
+    background-color: #fff;
+    flex-grow: 1;
+    
+    h2{
+       
+        font-size: 16rem ;
+        font-weight: 700;
+        margin-top: 2%;
+        margin-bottom: 3%;
+    }
+    p{
+        margin-bottom: 3%;
+        font-size: 2rem;
+    }
+    a{
+        display: inline-block;
+        color: $main-color;
+        margin-bottom: 3%;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }   
+}

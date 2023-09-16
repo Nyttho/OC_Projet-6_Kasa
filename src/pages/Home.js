@@ -1,16 +1,15 @@
 import React from "react";
-import Navigation from "../components/Navigation";
-import Banner from "../components/Banner";
-import Footer from "../components/Footer";
 import EmplacementList from "../components/EmplacementList";
+import banner from "../assets/images/cliffs.png";
 
 const Home = () => {
   return (
     <div>
-      <Navigation />
-      <Banner />
-      <EmplacementList />
-      <Footer />
+      <div className="banner">
+        <h2>Chez vous, partout et ailleurs</h2>
+        <img src={banner} alt="paysage de falaises en bord de mer" />
+      </div>
+      {/* <EmplacementList /> */}
     </div>
   );
 };

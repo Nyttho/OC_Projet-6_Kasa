@@ -1,0 +1,18 @@
+.footer {
+    background-color: #000;
+    color: #fff;
+    @include center-elements;
+    flex-direction: column;
+    width: 100%;
+
+    img {
+        filter: brightness(0) invert(1);
+        margin-top: 60px;
+        margin-bottom: 28.5px;
+        width: 122px;
+    }
+    p{
+        font-size: 1.33rem;
+        margin-bottom: 29px;
+    }
+}
