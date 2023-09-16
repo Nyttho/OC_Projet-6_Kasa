@@ -1,10 +1,11 @@
 import React from "react";
-import Navigation from "../components/Navigation";
-
+import banner from "../assets/images/mountains.png";
 const About = () => {
   return (
     <div>
-      <h1>A propos</h1>
+      <div className="banner">
+        <img src={banner} alt="paysage de falaises en bord de mer" />
+      </div>
     </div>
   );
 };

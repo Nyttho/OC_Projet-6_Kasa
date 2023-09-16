@@ -6,10 +6,10 @@ const Home = () => {
   return (
     <div>
       <div className="banner">
-        <h2>Chez vous, partout et ailleurs</h2>
         <img src={banner} alt="paysage de falaises en bord de mer" />
+        <h2>Chez vous, partout et ailleurs</h2>
       </div>
-      {/* <EmplacementList /> */}
+      <EmplacementList />
     </div>
   );
 };
