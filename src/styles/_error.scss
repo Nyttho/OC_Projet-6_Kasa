@@ -16,10 +16,7 @@
         font-size: 2rem;
     }
     a{
-        display: inline-block;
         color: $main-color;
-        margin-bottom: 3%;
-
         &:hover {
             text-decoration: underline;
         }

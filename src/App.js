@@ -10,7 +10,7 @@ import Footer from "./components/Footer";
 const App = () => {
   return (
     <BrowserRouter>
-      <div>
+      <div className="app">
         <div className="main-container">
           <Navigation />
           <main>

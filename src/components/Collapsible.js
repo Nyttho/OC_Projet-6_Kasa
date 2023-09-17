@@ -9,9 +9,7 @@ const Collapsible = (props) => {
   };
   return (
     <div className="collapsible-button-container" onClick={toggle}>
-      <button className="collapsible-button .collapsible-button--long">
-        {props.label}
-      </button>
+      <button className="collapsible-button">{props.label}</button>
       <img src={arrow} alt="" />
 
       <div className={open ? "content-show" : "content-parent"}>

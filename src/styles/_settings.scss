@@ -22,15 +22,27 @@ body{
     font-size: 18px;
    
     
+
+    .app{
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+
+      
+    }
+  
+   
+    
     .main-container{
        
         width: 100%;
         max-width: 1440px;
         margin: 0 auto;
         padding: 0 50px;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
+        flex-grow: 1;
+        
+        
+       
     
     }
   
