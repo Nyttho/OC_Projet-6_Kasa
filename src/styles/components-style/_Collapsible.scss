@@ -1,0 +1,47 @@
+
+.collapsible-button-container {
+    width: 85%;
+    margin-top: 30px;
+    position: relative;
+    
+   
+
+
+    .collapsible-button {
+        background-color: $main-color;
+        width: 100%;
+        color: $white;
+        border: none;
+        border-radius: 5px;
+        height: 42px;
+        text-align: left;
+        font-size: 1.33rem;
+        padding-left: 15px;
+        
+        
+
+    }
+    img{
+        position: absolute;
+        right: 10px;
+        top: 3px;
+    }
+   
+}
+
+.collapsible-content {
+    background-color: $light-grey;
+    padding: 1rem;
+    border-radius: 5px;
+}
+    
+.content-parent {
+    height: 0px;
+    overflow: hidden;
+    transition: height ease 0.9s;
+}
+    
+.content-show {
+    height: fit-content;
+}
+

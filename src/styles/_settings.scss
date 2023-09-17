@@ -28,12 +28,16 @@ body{
         max-width: 1440px;
         margin: 0 auto;
         padding: 0 50px;
-        height: 100vh;
+        min-height: 100vh;
         display: flex;
         flex-direction: column;
     
     }
   
+}
+
+main{
+    flex-grow: 1;
 }
 
 li{

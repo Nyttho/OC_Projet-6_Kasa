@@ -8,10 +8,10 @@ const Navigation = () => {
       <img className="logo" src={logo} alt="logo de Kasa" />
       <nav>
         <ul>
-          <NavLink to="/">
+          <NavLink to="/" activeclassname="active-link">
             <li>Accueil</li>
           </NavLink>
-          <NavLink to="/about">
+          <NavLink to="/about" activeclassname="active-link">
             <li>A propos</li>
           </NavLink>
         </ul>

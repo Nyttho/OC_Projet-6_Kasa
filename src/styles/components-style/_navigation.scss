@@ -6,6 +6,7 @@
     margin-top: 45px;
     background-color: #fff;
     
+    
     .logo{
         width: 210px;
     }
@@ -13,15 +14,18 @@
     ul {
         @include center-elements;
         font-size: 1.4rem;
+        
 
         li{
             
             margin-left: 57px;
             color: $main-color;
 
-            &:hover{
-                text-decoration: underline;
-            }
+        }
+
+        .active {
+            text-decoration: underline;
+            color: $main-color;
         }
 
         
