@@ -12,10 +12,15 @@ const Collapsible = (props) => {
     setOpen(!open);
   };
   return (
-    <div className="collapsible-button-container" onClick={toggle}>
+    <div className="collapsible-button-container">
       <button className="collapsible-button">{props.label}</button>
-      {/* change la class en fonction de l'état d'open qui change au clic de la div  */}
-      <img src={arrow} alt="" className={open ? "arrow rotate" : "arrow"} />
+      {/* change la class en fonction de l'état d'open qui change au clic de la fleche  */}
+      <img
+        src={arrow}
+        alt=""
+        className={open ? "arrow rotate" : "arrow"}
+        onClick={toggle}
+      />
 
       <div
         className="content-parent"
