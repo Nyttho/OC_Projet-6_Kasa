@@ -1,7 +1,7 @@
 .banner {
     position: relative;
     height: 225px;
-    margin-top: 55px;
+    margin-top: 50px;
     
     img{
         width: 100%;
@@ -14,6 +14,7 @@
 
     h2 {
         position: absolute;
+        font-weight: 400;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -22,5 +23,25 @@
         width: 100%;
         text-align: center;
   
+    }
+}
+
+@media screen and (max-width: 610px) {
+
+    .banner {
+        height: 111px;
+        
+
+        img{
+            border-radius: 10px;
+
+        }
+
+        h2{
+            font-size: 1.33rem;
+            text-align: left;
+            padding: 0 16px;
+
+        }
     }
 }

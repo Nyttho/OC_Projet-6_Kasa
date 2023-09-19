@@ -1,9 +1,15 @@
 .footer {
+    @include center-elements;
     background-color: #000;
     color: $white;
-    @include center-elements;
-    flex-direction: column;
     width: 100%;
+
+
+    .footer-container {
+        @include center-elements;
+        flex-direction: column;
+
+    }
 
     img {
         filter: brightness(0) invert(1);
@@ -15,4 +21,22 @@
         font-size: 1.33rem;
         margin-bottom: 29px;
     }
+}
+
+@media screen and (max-width: 610px) {
+    .footer-container {
+        width: 100px;
+        text-align: center;
+    }
+
+    .footer {
+        img {
+        margin-bottom: 10px;
+
+    }
+        p{
+            font-size: 0.67rem;
+        }
+      
+}
 }

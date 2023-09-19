@@ -32,4 +32,18 @@
         
     }
 }
+@media screen and (max-width: 610px) {
+    .header {
 
+        .logo {
+            width: 145px;
+        }
+        ul{
+            font-size: 0.67rem;
+
+            li{
+                margin-left: 26px;
+            }
+        }
+    }
+}
