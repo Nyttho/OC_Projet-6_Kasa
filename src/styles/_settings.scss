@@ -59,3 +59,11 @@ a{
 
 }
 
+@media screen and (max-width: 610px) {
+    body{
+        .main-container{
+            padding: 0 20px;
+        }
+    }
+}
+

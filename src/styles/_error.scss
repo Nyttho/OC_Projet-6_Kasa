@@ -1,22 +1,25 @@
 .error-page {
+    margin-top: 139px;
     text-align: center;
     color: $main-color;
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 139px;
     
     
     h2{
        
         font-size: 16rem ;
         font-weight: 700;
-        margin-top: 25px;
-        margin-bottom: 35px;
     }
     p{
-        margin-bottom: 35px;
         font-size: 2rem;
     }
     a{
         color: $main-color;
+        display: block;
+        margin-bottom: 139px;
         &:hover {
             text-decoration: underline;
         }
@@ -26,15 +29,13 @@
 @media screen and (max-width: 610px) {
     .error-page {
         margin-top: 113px;
+        gap: 113px;
         h2{
             font-size: 5.33rem;
            
         }
-        p{
-            margin: 113px 0;
-        }
+
         a {
-            display: block;
             margin-bottom: 113px;
         }
     }

@@ -1,6 +1,7 @@
 .card {
-    height: 340px;
+    aspect-ratio: 1/1;
     cursor: pointer;
+    
     
 
     .card-content {
@@ -8,6 +9,7 @@
         height: 100%;
         width: 100%;
         overflow: hidden;
+        
 
         &::before {
             content: "";
@@ -40,8 +42,4 @@
     }
 }
 
-@media screen and (max-width: 610px) {
-    .card{
-        height: 325px;
-    }
-}
+
