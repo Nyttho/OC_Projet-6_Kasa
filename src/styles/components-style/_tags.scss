@@ -1,0 +1,20 @@
+.tags-container{
+    margin-top: 20px;
+    margin-bottom: 20px;
+   
+    ul{
+        display: flex;
+
+
+        li{
+            background-color: $main-color;
+            color: white;
+            width: 160px;
+            text-align: center;
+            padding: 5px;
+            border-radius: 11px;
+            font-size: 0.9rem;
+            margin-right: 10px;
+        }
+    }
+}

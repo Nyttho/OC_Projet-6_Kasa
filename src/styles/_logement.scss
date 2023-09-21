@@ -1,0 +1,29 @@
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    
+    h3{
+        font-size: 2rem;
+    }
+
+    .host-description{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .star{
+        margin-top: 16px;
+        margin-left: 6px;
+
+    }
+
+}
+
+.description-equipment{
+    display: flex;
+    gap: 76px;
+    margin-bottom: 50px;
+
+   
+}
