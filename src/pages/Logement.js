@@ -1,5 +1,5 @@
-import React from "react";
-import { useParams } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { useParams, useNavigate } from "react-router-dom";
 import locations from "../data/locations.json";
 import Slider from "../components/Slider";
 import Tags from "../components/Tags";
@@ -8,10 +8,28 @@ import Ratting from "../components/Ratting";
 import Collapsible from "../components/Collapsible";
 
 const Logement = () => {
-  // on récuperere l'url
-  const param = useParams();
-  const placeId = param.id;
-  const place = locations.find((loc) => loc.id === placeId);
+  //on récupère l'id de l'url
+  const { id } = useParams();
+  const navigate = useNavigate();
+
+  // on déclare place en tant que state initialisé à null
+  const [place, setPlace] = useState(null);
+
+  useEffect(() => {
+    // on recherche l'emplacement par ID
+    const foundPlace = locations.find((loc) => loc.id === id);
+
+    if (!foundPlace) {
+      navigate("/error");
+    } else {
+      // on met à jour le state place avec l'emplacement trouvé
+      setPlace(foundPlace);
+    }
+  }, [id, navigate]);
+
+  if (!place) {
+    return <div>Logement non trouvé !</div>;
+  }
 
   const {
     title,
@@ -28,10 +46,6 @@ const Logement = () => {
   const firstName = hostName[0];
   const lastName = hostName[1];
   const portrait = host.picture;
-
-  if (!place) {
-    window.location.replace("/error");
-  }
 
   return (
     <div>

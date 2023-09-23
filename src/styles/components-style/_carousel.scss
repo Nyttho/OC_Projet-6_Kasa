@@ -39,3 +39,16 @@
 
     }
 }
+
+@media screen and (max-width: 775px) {
+    .carousel-container{
+        .arrow {
+            img{
+            width: 24px;
+        }
+    }
+        .carousel-img{
+            height: 220px;
+        }
+    }
+}

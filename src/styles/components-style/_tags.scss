@@ -1,20 +1,33 @@
 .tags-container{
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
    
     ul{
         display: flex;
+        flex-wrap: wrap;
 
 
         li{
             background-color: $main-color;
             color: white;
-            width: 160px;
+            min-width: 140px;
             text-align: center;
             padding: 5px;
             border-radius: 11px;
             font-size: 0.9rem;
             margin-right: 10px;
+            margin-top: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .tags-container {
+        ul{
+            li{
+                font-size: 0.56rem;
+                min-width: 120px
+            }
         }
     }
 }
