@@ -88,14 +88,25 @@ a {
   .about-container {
     margin: 0;
   }
+  .about-container:last-child {
+    margin-bottom: 20px;
+  }
 }
 .info-container {
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
 }
-.info-container h3 {
+.info-container .place-info {
+  max-width: 500px;
+}
+.info-container .place-info h3 {
   font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+}
+.info-container .place-info h4 {
+  font-weight: 300;
 }
 .info-container .host-description {
   display: flex;
@@ -113,6 +124,39 @@ a {
   margin-bottom: 50px;
 }
 
+@media screen and (max-width: 775px) {
+  .info-container {
+    flex-direction: column;
+  }
+  .info-container .place-info {
+    max-width: 100%;
+  }
+  .info-container .place-info h3 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    line-height: 1.5rem;
+  }
+  .info-container .place-info h4 {
+    font-size: 0.78rem;
+  }
+  .info-container .place-host {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .description-equipment {
+    display: block;
+  }
+  .description-equipment .collapsible-button-container {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 610px) {
+  .star {
+    width: 20px;
+  }
+}
 .banner {
   position: relative;
   height: 225px;
@@ -180,6 +224,7 @@ a {
   .footer-container {
     width: 100px;
     text-align: center;
+    height: 209px;
   }
   .footer img {
     margin-bottom: 10px;
@@ -336,6 +381,9 @@ a {
   .collapsible-button-container .arrow {
     width: 22px;
   }
+  .collapsible-button-container .collapsible-content {
+    font-size: 0.67rem;
+  }
 }
 .carousel-container {
   position: relative;
@@ -373,24 +421,40 @@ a {
   border-radius: 25px;
 }
 
+@media screen and (max-width: 775px) {
+  .carousel-container .arrow img {
+    width: 24px;
+  }
+  .carousel-container .carousel-img {
+    height: 220px;
+  }
+}
 .tags-container {
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .tags-container ul {
   display: flex;
+  flex-wrap: wrap;
 }
 .tags-container ul li {
   background-color: #FF6060;
   color: white;
-  width: 160px;
+  min-width: 140px;
   text-align: center;
   padding: 5px;
   border-radius: 11px;
   font-size: 0.9rem;
   margin-right: 10px;
+  margin-top: 10px;
 }
 
+@media screen and (max-width: 610px) {
+  .tags-container ul li {
+    font-size: 0.56rem;
+    min-width: 120px;
+  }
+}
 .host-description .host-description {
   display: flex;
   align-items: center;
@@ -403,6 +467,15 @@ a {
   -o-object-fit: cover;
      object-fit: cover;
   width: 64px;
-  height: 64px;
+  aspect-ratio: 1/1;
   margin-left: 10px;
+}
+
+@media screen and (max-width: 610px) {
+  .host-description img {
+    width: 32px;
+  }
+  .host-description p {
+    font-size: 0.7rem;
+  }
 }/*# sourceMappingURL=index.css.map */
