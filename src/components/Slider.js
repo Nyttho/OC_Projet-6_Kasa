@@ -22,12 +22,12 @@ const Slider = ({ pictures }) => {
       <div className="carousel-container">
         {picLength > 1 && (
           <div className="arrow next">
-            <img src={nextArrow} alt="image suivante" onClick={nextImg} />
+            <img src={nextArrow} alt="flèche suivante" onClick={nextImg} />
           </div>
         )}
         {picLength > 1 && (
           <div className="arrow prev">
-            <img src={prevArrow} alt="image suivante" onClick={prevImg} />
+            <img src={prevArrow} alt="flèche précédente" onClick={prevImg} />
           </div>
         )}
         <div className="carousel-img">
