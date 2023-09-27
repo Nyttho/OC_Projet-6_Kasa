@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.442332c3.css",
-    "main.js": "/static/js/main.49f7603f.js",
-    "static/media/mountains.png": "/static/media/mountains.dc7a08e1faa2e14de0bd.png",
-    "static/media/cliffs.png": "/static/media/cliffs.1168be13650bb18b456e.png",
-    "index.html": "/index.html",
-    "static/media/arrow.svg": "/static/media/arrow.a8b9b5ca78cd5124727100163f345f20.svg",
-    "main.442332c3.css.map": "/static/css/main.442332c3.css.map",
-    "main.49f7603f.js.map": "/static/js/main.49f7603f.js.map"
+    "main.css": "/OC_projet-6_Kasa/static/css/main.6e00f97f.css",
+    "main.js": "/OC_projet-6_Kasa/static/js/main.1a2663cb.js",
+    "static/media/mountains.png": "/OC_projet-6_Kasa/static/media/mountains.dc7a08e1faa2e14de0bd.png",
+    "static/media/cliffs.png": "/OC_projet-6_Kasa/static/media/cliffs.1168be13650bb18b456e.png",
+    "index.html": "/OC_projet-6_Kasa/index.html",
+    "static/media/arrow.svg": "/OC_projet-6_Kasa/static/media/arrow.d928611bc90eddc723a6afedb7a0bdfe.svg",
+    "main.6e00f97f.css.map": "/OC_projet-6_Kasa/static/css/main.6e00f97f.css.map",
+    "main.1a2663cb.js.map": "/OC_projet-6_Kasa/static/js/main.1a2663cb.js.map"
   },
   "entrypoints": [
-    "static/css/main.442332c3.css",
-    "static/js/main.49f7603f.js"
+    "static/css/main.6e00f97f.css",
+    "static/js/main.1a2663cb.js"
   ]
 }

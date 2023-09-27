@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/OC_projet-6_Kasa">
       <div className="app">
         <div className="main-container">
           <Navigation />

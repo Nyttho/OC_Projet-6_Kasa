@@ -25,7 +25,7 @@ const Logement = () => {
       // on met à jour le state place avec l'emplacement trouvé
       setPlace(foundPlace);
     }
-  }, []);
+  }, [id, navigate]);
 
   if (!place) {
     return <div>Logement non trouvé !</div>;
