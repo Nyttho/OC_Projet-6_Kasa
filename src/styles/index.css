@@ -264,6 +264,7 @@ a {
   }
   .header ul {
     font-size: 0.67rem;
+    text-transform: uppercase;
   }
   .header ul li {
     margin-left: 26px;
