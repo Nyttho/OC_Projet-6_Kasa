@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div>
       <div className="banner">
-        <img src={banner} alt="paysage de falaises en bord de mer" />
+        <img src={banner} alt="paysage de montagnes" />
       </div>
       <div className="about-container">
         <Collapsible label="Fiabilité">

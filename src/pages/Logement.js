@@ -28,7 +28,7 @@ const Logement = () => {
   }, [id, navigate]);
 
   if (!place) {
-    return <div>Logement non trouvé !</div>;
+    return <div></div>;
   }
 
   const {
